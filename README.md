@@ -1,4 +1,4 @@
-# Inmersion-DEV-AGENTES-DE-AI
+# INMERSION-DEV-AGENTES-DE-AI
 Sistema de agente inteligente capaz de decidir dinámicamente entre consultar documentos internos (RAG) o información en la web, generando respuestas estructuradas y exportables.
 ## 🚀 Descripción
 
