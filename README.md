@@ -41,7 +41,19 @@ Usuario → Clasificación → (RAG | Web) → Contexto → LLM → Respuesta es
 - **Vector Store:** FAISS  
 - **Web Search:** SerpAPI  
 - **PDF Processing:** PyPDF  
-- **Exportación:** ReportLab  
+- **Exportación:** ReportLab
+
+graph TD
+    START([Inicio]) --> A[nodo_agente<br/>Clasificación de pregunta]
+
+    A -->|RAG| B[nodo_rag<br/>Consulta a documentos]
+    A -->|Web| C[nodo_web<br/>Búsqueda en internet]
+
+    B --> D[nodo_markdown<br/>Generación de respuesta]
+    C --> D
+
+    D --> END([Fin])
+    
 ---
 
 ## 🔍 Funcionalidades
