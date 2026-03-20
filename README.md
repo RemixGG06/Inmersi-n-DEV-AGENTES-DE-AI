@@ -42,22 +42,6 @@ Usuario → Clasificación → (RAG | Web) → Contexto → LLM → Respuesta es
 - **Web Search:** SerpAPI  
 - **PDF Processing:** PyPDF  
 - **Exportación:** ReportLab
-    
-graph TD
-    START([START]) --> A[Agente Clasificador]
-
-    A -->|fuente = RAG| B[Retriever RAG]
-    A -->|fuente = Web| C[Web Search Tool]
-
-    B --> D[Contexto]
-    C --> D
-
-    D --> E[LLM Generator]
-
-    E --> F[Respuesta Markdown]
-
-    F --> END([END])
-    
 
 ---
 
